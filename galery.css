@@ -1,0 +1,54 @@
+        /* NAV BAR HOVER */
+        .nav-link:hover {
+          background-color: #D7D3BF;
+          border-radius: 10px;
+      }
+
+      .n {
+          margin-right: 40px;
+      }
+
+      /* Heart style */
+      .heart {
+          font-size: 35px;
+          cursor: pointer;
+          color: black;
+          transition: color 0.3s ease;
+          margin-right: 40px;
+      }
+
+      .heart.clicked {
+          color: red;
+      }
+
+      .a {
+          height: 400px;
+          width: 300px;
+      }
+
+      .header {
+          display: inline-block;
+          margin-left: 10px;
+          margin-top: 13px;
+          margin-bottom: 20px;
+      }
+   
+      .header span {
+          color: red;
+      }
+      .header a {
+          text-decoration: none !important;
+          color: black;
+      }
+      ul li a{
+        text-decoration: none;
+      }
+
+  .nav-link:hover {
+    background-color: #D7D3BF;
+    border-radius: 10px;
+  }
+  
+  .n {
+    margin-right: 40px;
+  }

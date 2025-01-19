@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RICH FIELD CHAIRS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="RICHCHAIRS.css">
+
+  <style>
+    /* m */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+
+    /* NAVBAR */
+    .header {
+      display: inline-block;
+      margin-left: 10px;
+      margin-top: 13px;
+      margin-bottom: 20px;
+    }
+
+    .header span {
+      color: red;
+    }
+
+    /* CARDS */
+   
+
+    .office {
+      text-align: center;
+      font-weight: bold;
+      color: rgb(3, 174, 210);
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
+    .card {
+      border: 1px solid black;
+    }
+
+    .note {
+      height: 250px;
+      transition: 1s;
+    }
+
+    .note:hover {
+      transform: scale(1.3);
+      z-index: 2;
+    }
+
+    .card-title span {
+      color: grey;
+      font-size: 20px;
+    }
+
+    .card-body h6 {
+      font-size: 20px;
+      color: rgb(60, 61, 55);
+    }
+
+    .add {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .add:hover {
+      background-color: black;
+    }
+
+   
+
+    /* NAV BAR HOVER */
+    .nav-link:hover {
+      background-color: #D7D3BF;
+      border-radius: 10px;
+    }
+
+    .n {
+      margin-right: 40px;
+    }
+
+    /* Heart style */
+    .heart {
+      font-size: 35px;
+      cursor: pointer;
+      color: black;
+      transition: color 0.3s ease;
+      margin-right: 40px;
+    }
+
+    .heart.clicked {
+      color: red;
+    }
+
+    .head {
+      text-align: center;
+      margin-bottom: 100px;
+      display: inline-block;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .head span {
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-lights bg-light main">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="dining (1).png" alt="">
+      <div class="header">
+        <a href="index.html">
+          <h1 style="font-size: 35px;"><span>RICHFIELD </span>CHAIRS</h1>
+        </a>
+      </div>
+    </a>
+    <button class="navbar-toggler"  style="background-color: black; border: 2px solid red;"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item pe-5">
+          <a class="nav-link" style="color: black; font-size: 18px;  font-weight: bold; " aria-current="page"
+            href="index.html">Home</a>
+        </li>
+        <li class="nav-item pe-4">
+          <a class="nav-link" style="color:black; font-size: 18px; font-weight: bold; " href="about1.html">About</a>
+        </li>
+        <li class="nav-item pe-4 dropdown">
+          <a class="nav-link dropdown-toggle" style="color: red; font-size: 18px; font-weight: bold; " href="#"
+            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Brands
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="low.html">Leo Chairs</a></li>
+            <li><a class="dropdown-item" href="gaming.html">IKEA  Chairs</a></li>
+            <li><a class="dropdown-item" href="fancy.html">Knoll Chairs</a></li>
+            <li><a class="dropdown-item" href="bar.html">Herman Miller Chairs</a></li>
+            <li><a class="dropdown-item" href="children.html">Vitra Chairs</a></li>
+            <li><a class="dropdown-item" href="folding.html">HON Chairs</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item pe-4">
+          <a class="nav-link" style="color: black; font-size: 18px; font-weight: bold; "
+            href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item pe-4">
+          <a class="nav-link" style="color: black; font-size: 18px; font-weight: bold; "
+            href="contact2.html.html">Contact
+          </a>
+        </li>
+        <li class="nav-item pe-4">
+          <a class="nav-link" style="color: black; font-size: 18px; font-weight: bold; "
+            href="features.html">Features
+          </a>
+        </li>
+      </ul>
+      <a href="login.html">
+        <img class="n" src="user.png" alt="">
+      </a>
+
+      <!-- Heart icon -->
+      <div class="heart" id="heart">&#10084;</div>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+  <!-- GAMING CHAIRS 4 -->
+
+
+  <p class="office">IKEA CHAIRS</p>
+  <hr>
+
+
+
+  <div class="container text-center">
+    <br>
+    <br>
+    <br>
+    <div class="row align-items-start">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card" style="width: 100%;">
+          <img class="note" src="baby-chairs-highchairs-45782.jpeg" class="card-img-top" alt="...">
+
+          <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+          <div class="card-body">
+            <h6>Aria Gaming Chair</h6>
+            <h5>Rs.40,000</h5>
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="favorite.png" alt="">
+            <br>
+            <br>
+            <a href="#">
+
+              <button class="add">Order Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card" style="width: 100%;">
+          <img class="note" src="bar-stools-chairs-20864.jpeg" class="card-img-top" alt="...">
+
+          <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+          <div class="card-body">
+            <h6>Lucy Gaming Chair</h6>
+            <h5>Rs.35,000</h5>
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <br>
+            <br>
+            <a href="#">
+
+              <button class="add">Order Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card" style="width: 100%;">
+          <img class="note" src="cafe-chairs-19144 (1).jpeg" class="card-img-top" alt="...">
+          <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+          <div class="card-body">
+            <h6>Owen Gaming Chair</h6>
+            <h5>Rs.50,000</h5>
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <br>
+            <br>
+            <a href="#">
+
+              <button class="add">Order Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container text-center">
+    <br>
+    <br>
+    <br>
+    <div class="row align-items-start">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card" style="width: 100%;">
+          <img class="note" src="childrens-chairs-bc004.jpeg" class="card-img-top" alt="...">
+
+          <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+          <div class="card-body">
+            <h6> Red/Black Gaming Chair</h6>
+            <h5>Rs.10,000</h5>
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <br>
+            <br>
+            <a href="#">
+
+              <button class="add">Order Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card" style="width: 100%;">
+          <img class="note" src="dressing-table-chairs-stools-59250.jpeg" class="card-img-top" alt="...">
+
+          <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+          <div class="card-body">
+            <h6>GR Gaming Chair</h6>
+            <h5>Rs.90,000</h5>
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="favorite.png" alt="">
+            <img class="down" src="white-star.png" alt="">
+            <br>
+            <br>
+            <a href="#">
+
+              <button class="add">Order Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card" style="width: 100%;">
+          <img class="note" src="cafe-chairs-19144.jpeg" class="card-img-top" alt="...">
+          <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+          <div class="card-body">
+            <h6>Harry Gaming Chair</h6>
+            <h5>Rs.45,999</h5>
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="star.png" alt="">
+            <img class="down" src="favorite.png" alt="">
+            <br>
+            <br>
+
+            <a href="#">
+              <button class="add">Order Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 2ND -->
+
+ <!-- GAMING CHAIRS 4 -->
+
+
+
+
+
+
+ <div class="container text-center">
+   <br>
+   <br>
+   <br>
+   <div class="row align-items-start">
+     <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+       <div class="card" style="width: 100%;">
+         <img class="note" src="dining-chairs-25219.jpeg" class="card-img-top" alt="...">
+
+         <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+         <div class="card-body">
+           <h6>Aria Gaming Chair</h6>
+           <h5>Rs.40,000</h5>
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="favorite.png" alt="">
+           <br>
+           <br>
+           <a href="#">
+
+             <button class="add">Order Now</button>
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+       <div class="card" style="width: 100%;">
+         <img class="note" src="armchairs-chaise-longues-fu006.jpeg" class="card-img-top" alt="...">
+
+         <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+         <div class="card-body">
+           <h6>Lucy Gaming Chair</h6>
+           <h5>Rs.35,000</h5>
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <br>
+           <br>
+           <a href="#">
+
+             <button class="add">Order Now</button>
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+       <div class="card" style="width: 100%;">
+         <img class="note" src="chairs-fu002.jpeg" class="card-img-top" alt="...">
+         <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+         <div class="card-body">
+           <h6>Owen Gaming Chair</h6>
+           <h5>Rs.50,000</h5>
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <br>
+           <br>
+           <a href="#">
+
+             <button class="add">Order Now</button>
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+ <div class="container text-center">
+   <br>
+   <br>
+   <br>
+   <div class="row align-items-start">
+     <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+       <div class="card" style="width: 100%;">
+         <img class="note" src="desk-chairs-20652.jpeg" class="card-img-top" alt="...">
+
+         <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+         <div class="card-body">
+           <h6> Red/Black Gaming Chair</h6>
+           <h5>Rs.10,000</h5>
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <br>
+           <br>
+           <a href="#">
+
+             <button class="add">Order Now</button>
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+       <div class="card" style="width: 100%;">
+         <img class="note" src="gaming-chairs-47067.jpeg" class="card-img-top" alt="...">
+
+         <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+         <div class="card-body">
+           <h6>GR Gaming Chair</h6>
+           <h5>Rs.90,000</h5>
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="favorite.png" alt="">
+           <img class="down" src="white-star.png" alt="">
+           <br>
+           <br>
+           <a href="#">
+
+             <button class="add">Order Now</button>
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+       <div class="card" style="width: 100%;">
+         <img class="note" src="cafe-chairs-19144 (2).jpeg" class="card-img-top" alt="...">
+         <h5 class="card-title"> <span> GAMING CHAIR</span></h5>
+         <div class="card-body">
+           <h6>Harry Gaming Chair</h6>
+           <h5>Rs.45,999</h5>
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="star.png" alt="">
+           <img class="down" src="favorite.png" alt="">
+           <br>
+           <br>
+
+           <a href="#">
+             <button class="add">Order Now</button>
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+  <!-- Main Content of the Website -->
+
+  <br>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="center">
+      <img class="q" src="dining.png" alt="">
+      <div class="head">
+        <h1><span>RICHFIELD </span>CHAIRS</h1>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3> Rich Field Chairs</h3>
+        <p class="yt">Welcome to Rich Field Chairs! We specialize in high-quality, stylish, and comfortable chairs for
+          every need and every space. Whether you're looking for ergonomic office chairs, luxurious dining chairs, or
+          chic accent pieces, we have something for everyone.</p>
+        <p class="yt">Thank you for choosing [RICH FEILDS CHAIRS]. We look forward to helping you create the perfect
+          seating arrangement!</p>
+      </div>
+
+      <div class="footer-section quick-links" style="margin-left: 50px;">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about1.html">About Us</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="contact2.html.html">Contact us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="features.html">Features</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-section contact" style="margin-right: 80px;">
+        <h3 style="margin-left: 30px;">Contact Us</h3>
+        <ul>
+          <li class="yt">Email: @RichFieldChairs.com</li>
+          <li class="yt">Phone: (555) 123-4567</li>
+          <li class="yt">Address: 789 Chair Lane, Comfort City, CC 12345</li>
+        </ul>
+        <a href=""><button
+            style="border: none; background-color: green; padding: 10px; border-radius: 10px; color: white; margin-left: 20px;">CALL
+            US FOR ASSITANCE</button></a>
+      </div>
+
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+          <a href="#" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
+          <a href="#" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+          <a href="#" class="social-icon"><img src="pinterest.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Rich Field Chairs | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // JavaScript for heart click interaction
+  document.getElementById('heart').addEventListener('click', function () {
+    this.classList.toggle('clicked');
+  });
+</script>
+
+</html>
